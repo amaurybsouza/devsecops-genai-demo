@@ -1,0 +1,13 @@
+name: Echo Message Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  echo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Test Message
+        run: echo "test"
